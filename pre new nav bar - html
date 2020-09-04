@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="Front end development, Front end developing, coding, code, html, css, javascript, java script, website, dave marong, codebydave">
+        <meta name="description" content="A portfolio of Dave Marong's projects">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>CodeByDave</title>
+    </head>
+    <body>
+        <header class="header">
+            <h1>
+                <a href="index.html"><img class="logo" src="codebydave/images/logo.png" alt="A vector image of the words code by dave" width="125"></a>
+            </h1>
+            <section class="navContainer">
+                <nav class="navBar">   
+                    <a href="" class="home">Home</a>            
+                    <a href="" class="projects">Projects</a>
+                    <a href="" class="timeline">Timeline</a>
+                    <a href="" class="about">About</a>
+                    <a href="" class="contact">Contact</a>
+                </nav>
+            </section>
+            <div class="hamburgerIcon">Meny</div>
+            <hr>
+        </header>
+        <main>
+            <section class="introSection">
+                <img src="codebydave/images/davemarong.jpg" alt="Self portarait" width="200" height="280">
+                <ul class="introList">
+                    <li class="introList1"><strong>Name:</strong> Dave Kjell Marong </li>
+                    <li class="introList2"><strong>Age:</strong> 25</li>
+                    <li class="introList3"><strong>Status:</strong> Studying "Front end development" at:<br /> Noroff - School of technology and digital media</li>
+                    <li class="introList4"><strong>Living:</strong> Norway, Oslo</li>
+                </ul>
+                <p>This website was created so I could have a place to <strong>learn, practise and showcase </strong> my coding. On this website, I will put out projects which are both finished and under progress. I will not delete anything from this website, so you can follow my <a href="">timeline</a> from a noob to a professional.</p>
+            </section>
+            <section class="pokemonSection">
+                <img src="codebydave/images/pokeball.png" width="300" height="300" alt="A mini photo (and a link) of a pokemon webpage">
+                <h2>
+                    <a class="imageAndLink" href="pokemon/version_2.0.html" title="Pokemon Guessing game version 2">Pokemon guessing game<br /> Version 2.0</a>
+                </h2>
+                <ul class="pokemonList">
+                    <li class="pokemonList1"><strong>Date finished:</strong> 30 july, 2020</li>  
+                    <li class="pokemonList2"><strong>What I learned:</strong> Using javascript to change CSS, placement with CSS, grid, flexbox, functions, add events. </li>
+                    <li class="pokemonList3"><strong>Tools:</strong> HTML, CSS, Javascript</li>
+                    <li class="pokemonList4"><strong>Device:</strong> Desktop</li>
+                </ul>
+                <p>This is my first javascript side project I made on my own. I have picked out 16 pokemon, and its your job to guess the right one. You can use up to 10 hints on each pokemon, but the challenge is to complete it with as few hints as possible. Do you think you can do it?</p>
+                <p><a href="pokemon/version_1.0.html" title="Pokemon Guessing game version 1">Pokemon Game - version 1.0</a><br /><small><strong>Date finished:</strong>18 june, 2020</small></p>
+            </section>
+            <section class="bjjSection">
+                <img src="codebydave/images/belt.png" width="300" height="300" alt="A mini photo (and a link) of a bjj webpage">
+
+                <h2>
+                    <a class="imageAndLink" href="bjj/index.html" title="Introduction to brazilian jiu jitsu">Brazilian Jiu Jitsu<br /> A simple static website</a>
+                </h2>
+                <ul class="bjjList">
+                    <li class="bjjList1"><strong>Date finished:</strong> 20 august, 2020</li>  
+                    <li class="bjjList2"><strong>What I learned:</strong>Web hosting, setting up email account, ftp, relative/absolute filepaths, building a multipage website</li>
+                    <li class="bjjList3"><strong>Tools:</strong> HTML, Webhuset, filezilla</li>
+                    <li class="bjjList4"><strong>Device:</strong> Desktop</li>
+                </ul>
+                <p>This is my first school project coding a real website. Its a really simple, html multipage website. If you are curios about brazilian jiu jitsu or just started training, this website is just for you my friend.</p>
+            </section>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
