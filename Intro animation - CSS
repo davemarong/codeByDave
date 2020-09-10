@@ -1,0 +1,19 @@
+@keyframes introAnime {
+    0% {background: url(codebydave/images/blackScreen.png);}
+    30% {background: url(codebydave/images/welcomeTilt.png)}
+    65% {background: url(codebydave/images/darkIphone100.png);}
+    100% {background: url(codebydave/images/lastBackground.png);}
+}
+
+.aboveFold{
+    background: url(codebydave/images/blackScreen.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: solid;
+    border-color: #F0EEE6;
+    height: 480px;
+    animation-name: introAnime;
+    animation-duration: 9s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
