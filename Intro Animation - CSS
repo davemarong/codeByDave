@@ -1,0 +1,21 @@
+@keyframes introAnime {
+    0% {background-image: url(codebydave/images/whiteBackground.png);}
+    25% {background-image: url(codebydave/images/welcomeCode.png);}
+    55% {background-image: url(codebydave/images/icon-background.png);}
+    75% {background-image: url(codebydave/images/lastBackground.png); height: 480px;}
+    100% {background-image: url(codebydave/images/lastBackground.png); height: 0px;}
+    
+}
+
+.aboveFold{
+    background: url(codebydave/images/whiteBackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: solid;
+    border-color: #F0EEE6;
+    height: 480px;
+    animation-name: introAnime;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
