@@ -1,0 +1,367 @@
+/* Color Palette
+
+#F0EEE6 - white - light shades
+#B88A6A - light brown - light accent
+#8E564B - brown - main brand color
+#2D3130 - light black - dark shades
+
+#7594A4 - dark blue - dark accent (extra)
+*/
+
+
+
+
+
+/*-----------------Global-----------------*/
+body{
+    background: #F0EEE6;
+    font-size: 20px;
+    margin: 0;
+    padding:0;
+}
+main{
+    margin: 0px 10px 0px 10px;
+}
+
+
+
+
+
+/*-----------------Header-----------------*/
+header{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    border-bottom: 3px solid #2D3130;
+    height: 70px;
+    width: 100%;
+    box-shadow: 0px 10px 8px -8px black;
+    background: #F0EEE6;
+    margin: 0px 10px 0px 10px;
+}
+
+
+
+
+
+/*-----------------Navbar-----------------*/
+#menuToggle
+{
+    display: block;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+}
+#menuToggle a
+{
+    text-decoration: none;
+    color: #F0EEE6;
+
+    transition: color 0.3s ease;
+}
+#menuToggle a:hover
+{
+    color: #2D3130;
+}
+#menuToggle input
+{
+    display: block;
+    width: 45px;
+    height: 38px;
+    position: absolute;
+    top: -10px;
+    left: -12px;
+
+    cursor: pointer;
+
+    opacity: 0;
+    z-index: 2;
+
+    -webkit-touch-callout: none;
+}
+#menu
+{
+    position: absolute;
+    width: 100px;
+    margin: -100px 0px 0px -100px;
+    padding: 50px 50px 20px 20px;
+    padding-top: 125px;
+    box-shadow: -3px 3px 5px black;
+    border-radius: 10px;
+    background: #8E564B;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+
+    transform: translate(100%, 0); 
+    transition: transform 0.5s ease-in;
+}
+#menuToggle input:checked ~ ul
+{
+    transform: none;
+}
+nav ul li{
+    padding: 0px 0px 10px 0px;
+    font-size: 26px;
+}
+#menuToggle span
+{
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #8E564B;
+    border-radius: 10px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s ease-in,
+        background 0.5s ease-in,
+        opacity 0.2s ease-in;
+}
+
+#menuToggle span:first-child
+{
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+    transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span
+{
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #B88A6A;
+}
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+
+
+
+
+/*-----------------Logo-----------------*/
+.logoText{
+    font-size: medium;
+}
+
+
+
+
+
+/*-----------------Project links-----------------*/
+h2{
+    align-self: center;
+    text-align: center;
+}
+
+
+
+
+
+/*-----------------Flex container-----------------*/
+.flexContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+
+
+
+
+/*-----------------Introduction-----------------*/
+@keyframes introAnime {
+    0% {background-image: url(codebydave/images/whiteBackground.png);}
+    25% {background-image: url(codebydave/images/welcomeCode.png);}
+    55% {background-image: url(codebydave/images/icon-background.png);}
+    75% {background-image: url(codebydave/images/lastBackground.png); height: 480px;}
+    100% {background-image: url(codebydave/images/lastBackground.png); height: 0px;}
+    
+}
+
+.aboveFold{
+    background: url(codebydave/images/whiteBackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: solid;
+    border-color: #F0EEE6;
+    height: 480px;
+    animation-name: introAnime;
+    animation-duration: 10s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+.imageDave{
+    border-radius: 20px;
+}
+.introSection{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #F0EEE6;
+}
+.introList{
+    list-style-type: none;
+    padding: 10px 10px 10px 10px;
+}
+.introList1{
+    background: #BFBEB8;
+    padding: 8px 8px 8px 8px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.introList2{
+    background: #D1CFC9;
+    padding: 8px 8px 8px 8px;
+}
+.introList3{
+    background: #BFBEB8;
+    padding: 8px 8px 8px 8px;
+}
+.introList4{
+    background: #D1CFC9;
+    padding: 8px 8px 8px 8px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+
+
+
+/*-----------------Projects-----------------*/
+.flexContainer p{
+    font-size: 16px;
+}
+.flexContainer a{
+    color: #F0EEE6; 
+}
+.pokemonSection .projectInfo a{
+    color: #2D3130;
+    font-style: oblique;
+}
+.pokemonSection, .bjjSection, .hairSection{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color:#2D3130;
+
+}
+.pokemonSection, .bjjSection, .hairSection{
+    border-radius: 20px;
+    width: 300px;
+    margin: 20px 20px 20px 20px;
+    box-shadow: 0px 0px 10px black;   
+}
+.pokemonList, .bjjList, .hairList{
+    list-style-type: none;
+    padding: 10px 10px 10px 10px;
+
+}
+.pokemonList1, .bjjList1, .hairList1{
+    background: #BFBEB8;
+    padding: 8px 8px 8px 8px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.pokemonList2, .bjjList2, .hairList2{
+    background: #D1CFC9;
+    padding: 8px 8px 8px 8px;
+}
+.pokemonList3, .bjjList3, .hairList3{
+    background: #BFBEB8;
+    padding: 8px 8px 8px 8px;
+}
+.pokemonList4, .bjjList4, .hairList4{
+    background: #D1CFC9;
+    padding: 8px 8px 8px 8px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+
+
+
+/*-----------------Collapsible-----------------*/
+
+.collapsible {
+    background-color: #8E564B;
+    color: #F0EEE6;
+    cursor: pointer;
+    padding: 18px;
+    width: 250px;
+    height: 50px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    box-shadow: 0px 0px 7px black;
+    align-self: flex-end;
+}
+.active, .collapsible:hover {
+    background-color: #B88A6A;
+}
+.collapsible:after {
+    content: '\002B';
+    color: #F0EEE6;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+.projectInfo {
+    padding: 0 18px;
+    overflow: hidden;
+    background-color: #F0EEE6;
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+}
+
+
+
+
+
+/*-----------------Footer-----------------*/
+footer{
+    height: 300px;
+    background-color: #B88A6A;
+}
+.mainFooter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+footer h3{
+    width: 100%;
+    text-align: center;
+}
+.footerItem{
+    padding: 0px 10px 0px 10px;
+}
